@@ -33,6 +33,7 @@
             this.dsInfo = new System.Data.DataSet();
             this.dgShow = new System.Windows.Forms.DataGridView();
             this.btnReadMedication = new System.Windows.Forms.Button();
+            this.buttonJson = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dsInfo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgShow)).BeginInit();
             this.SuspendLayout();
@@ -82,11 +83,22 @@
             this.btnReadMedication.UseVisualStyleBackColor = true;
             this.btnReadMedication.Click += new System.EventHandler(this.btnReadMedication_Click);
             // 
+            // buttonJson
+            // 
+            this.buttonJson.Location = new System.Drawing.Point(484, 12);
+            this.buttonJson.Name = "buttonJson";
+            this.buttonJson.Size = new System.Drawing.Size(75, 23);
+            this.buttonJson.TabIndex = 4;
+            this.buttonJson.Text = "read Json";
+            this.buttonJson.UseVisualStyleBackColor = true;
+            this.buttonJson.Click += new System.EventHandler(this.button1_Click_1);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(571, 275);
+            this.Controls.Add(this.buttonJson);
             this.Controls.Add(this.btnReadMedication);
             this.Controls.Add(this.dgShow);
             this.Controls.Add(this.txtFileName);
@@ -108,6 +120,7 @@
         private System.Data.DataSet dsInfo;
         private System.Windows.Forms.DataGridView dgShow;
         private System.Windows.Forms.Button btnReadMedication;
+        private System.Windows.Forms.Button buttonJson;
     }
 }
 
