@@ -48,10 +48,10 @@ namespace ExcelToAccess
             return patientList;
         }
 
-        public static void uploadMedication(List<Medication> mList)
+        public static void uploadMedication(List<excelMedication> mList)
         {
             var medList = new List<MedicationOrder>();
-            foreach (Medication med in mList)
+            foreach (excelMedication med in mList)
             {
                 MedicationOrder prescription = new Hl7.Fhir.Model.MedicationOrder();
 

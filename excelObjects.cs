@@ -23,7 +23,7 @@ namespace ExcelToAccess
         public string ADMIT_DATE = "";
     }
 
-    class Medication
+    class excelMedication
     {
         public double PERSON_CODE = 0;
         public string FIRST_NAME = "";

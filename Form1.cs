@@ -133,11 +133,11 @@ namespace ExcelToAccess
             myCommand.Connection.Open();
 
             //Read through each row and store all the person objects into an array
-            var medicationResults = new List<Medication>();
+            var medicationResults = new List<excelMedication>();
             OleDbDataReader myReader = myCommand.ExecuteReader(CommandBehavior.CloseConnection);
             while (myReader.Read())
             {
-                Medication medication = new Medication();
+                excelMedication medication = new excelMedication();
                 if (myReader[@"PERSON$_CODE"] != DBNull.Value)
                 {
                     medication.PERSON_CODE = (double)myReader[@"PERSON$_CODE"];
